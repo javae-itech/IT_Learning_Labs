@@ -1,0 +1,44 @@
+Basic Network Setup & System Check Lab 
+
+Date: November 7, 2025
+System: Lenovo Laptop — Windows 10
+Host Name: [Local Device]
+
+Objective:
+To understand basic networking concepts and perform a simple local system diagnostic using built-in Windows tools.
+
+Commands Tested:
+ipconfig /all
+ping 8.8.8.8
+tracert 8.8.8.8
+nslookup google.com
+
+Observations:
+Network Configuration (ipconfig /all)
+Wi-Fi Adapter: Realtek RTL8852BE WiFi 6 802.11ax PCIe Adapter
+Media State: Connected
+DHCP Enabled: Yes
+IPv4 Address: [Private IP Redacted]
+DNS Server: Provided by Comcast
+Default Gateway: Assigned dynamically
+Interpretation: Connected via Wi-Fi using DHCP. Comcast DNS servers handle resolution.
+
+Connectivity Test (ping 8.8.8.8)
+Packets: Sent = 4, Received = 4, Lost = 0 (0% loss)
+Minimum = 13ms, Maximum = 28ms, Average = 19ms
+Interpretation: Stable connection with low latency.
+
+Route Trace (tracert 8.8.8.8)
+Path: Started at local router, passed through regional ISP nodes, reached Google DNS.
+Interpretation: Normal routing with expected hops and one non-responsive node (not an error).
+
+DNS Resolution (nslookup google.com)
+Server: cdns01.comcast.net
+Address: [Redacted]
+Interpretation: DNS resolution successful, confirming domain lookup functionality.
+
+💡 Summary
+- Verified DHCP configuration and adapter connectivity.
+- Confirmed stable internet connection and low latency.
+- Validated routing and DNS resolution.
+- Demonstrated basic networking and troubleshooting skills.
